@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/nubes.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+  margin-bottom: 80px;
+}
+/* CABECERA */
+.cabecera {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2em;
+  padding: 2em;
+}
+
+.cabecera p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 2em;
+  font-family: 'Raleway', sans-serif;
+  margin-top: -50px;
+  
+}
+.cabecera img {
+  width: 100%;
+}
+.menu {
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  color: blue;
+}
+
+.navegador ul li {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.cabecera h1{
+  font-size: 80px;
+  font-family: 'Bree Serif', serif;
+  font-weight: bold;
+}
+/* CUERPO */
+.caja {
+  background-color: rgba(179, 241, 241, 0.075);
+  
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 200px;
+  margin: 100px;
+  border-radius: 2%;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+  
+}
+
+.caja:nth-last-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.caja.show {
+  transform: translateX(0);
+}
+
+.caja a:hover {
+  color: rgb(145, 0, 133);
+  
+}
+
+.contenidoCaja {
+  padding: 10px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+
+.contenidoCaja p {
+  width: auto;
+  height: 100px;
+  position: fixed;
+  
+  margin-top: 30px;
+  padding: 10px;
+  text-align: justify;
+  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: fixed;
+  font-style: italic;
+  font-size: 19px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+
+.contenidoCaja a {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0;
+  font-size: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: fixed;
+  margin: 0;
+  color: blue;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+
+}
+.contenidoCaja small {
+  position: fixed;
+  margin: 0;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+.contenidoCaja a.leer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 25px;
+  margin: 5px;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+label a {
+  font-size: 2em;
+  text-decoration: none;
+  font-family: 'Bree Serif', serif;
+  font-style: italic;
+}
+
+label a:hover {
+  font-size: 2em;
+  text-decoration: none;
+  font-family: 'Bree Serif', serif;
+  font-style: italic;
+}
+
+footer {
+  background-color: white;
+  border-top: solid 1px black;
+  bottom: 0%;
+  margin-left: -10px;
+  position: fixed;
+  width: 100%;
+}
+
+footer p {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}

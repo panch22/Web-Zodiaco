@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloResto.css">
+    <link rel="stylesheet" media="(max-width: 600px)" href="estiloVentana.css" />
+    <link rel="icon" type="image/png" href="img/faviconZodiaco.png" sizes="16x16">
+    <title>Zodiaco · Tienda</title>
+    <script type="text/Javascript" src ="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/Javascript">
+        $( document ).ready(function() {            
+            //Valores para todas las partes, de los productos existentes en la tienda
+            var productos = [
+                            "Pulsera",
+                            "Collar",
+                            "Tobillera",
+                            "Bolsa tote"
+                         ];
+
+            //Valores para todas las partes, de los precios de los productos de arriba
+            var precios = [
+                            5,
+                            7.5,
+                            2.5,
+                            20
+                         ];  
+            
+            //Valores para la parte 1, para personalizar los productos que se han insertado en el array "productos"
+            var texto = [   
+                            "Aries ♈",
+                            "Tauro ♉",
+                            "Géminis ♊",
+                            "Cáncer ♋",
+                            "Leo ♌",
+                            "Virgo ♍",
+                            "Libra ♎",
+                            "Escorpio ♏",
+                            "Sagitario ♐",
+                            "Capricornio ♑",
+                            "Acuario ♒",
+                            "Piscis ♓"
+                        ];
+                        
+            //Parte 1: Seleccionar tu signo y te lo "personaliza" para los productos.
+            $( "#signoSeleccionada" ).on( "change", function() {                                             
+                $('#resultPulsera').text(productos[0]+" "+texto[this.value-1]+": "+precios[0]+"€");    
+                $('#resultCollar').text(productos[1]+" "+texto[this.value-1]+": "+precios[1]+"€"); 
+                $('#resultTobillera').text(productos[2]+" "+texto[this.value-1]+": "+precios[2]+"€");
+                $('#resultTote').text(productos[3]+" "+texto[this.value-1]+": "+precios[3]+"€");         
+            });    
+            
+            $( "#signoSeleccionada" ).change();
+            
+                var clicks = 0, clickPulsera = 0, clickCollar = 0, clickTobillera = 0, clickTote = 0, total = 0;             
+
+            //Parte 2 : Pinchar el botón "Añadir a la cesta", te inserta un +1 en la cesta y en el resumen de la compra, te indica que productos has escogido y el total de la cesta.
+
+            $(" #botonCompra1 ").click(function() {
+                clickPulsera+=1;
+                total+=precios[0];
+                alert("Producto añadido");
+                $('#añadida').text(clicks+=1);
+            });
+
+            $(" #botonCompra1 ").change();
+
+            $(" #botonCompra2 ").click(function() {
+                clickCollar+=1;
+                total+=precios[1];
+                alert("Producto añadido");
+                $('#añadida').text(clicks+=1);
+            });
+
+            $(" #botonCompra2 ").change();
+
+            $(" #botonCompra3 ").click(function() {
+                clickTobillera+=1;
+                total+=precios[2];
+                alert("Producto añadido");
+                $('#añadida').text(clicks+=1);
+            });
+
+            $(" #botonCompra3 ").change();
+
+            $(" #botonCompra4 ").click(function() {
+                clickTote+=1;
+                total+=precios[3];
+                alert("Producto añadido");
+                $('#añadida').text(clicks+=1);
+            });
+
+            $(" #botonCompra4 ").change();
+
+            //Parte 3 : al pinchar el botón de la cesta, comprueba si se ha seleccionado algún producto y si se ha hecho, se muestra un resumen y pide confirmación de la compra.
+
+            $(" #finCompra ").click(function() {
+                if(clicks == 0) {
+                    alert("Debe seleccionar algún producto");
+                } else 
+                    if(clicks > 0) {
+                        alert("Resumen de la compra:\n"
+                        +clickPulsera+" X "+productos[0]+"\n"
+                        +clickCollar+" X "+productos[1]+"\n"
+                        +clickTobillera+" X "+productos[2]+"\n"
+                        +clickTote+" X "+productos[3]+"\nTotal: "+total+" €");
+                        if (confirm("¿Terminar la compra?")) {
+                            $('#añadida').text(clicks = 0);
+                            alert("Compra realizada");
+                            total = 0; 
+                            clickPulsera = 0;
+                            clickCollar = 0;
+                            clickTobillera = 0;
+                            clickTote = 0;
+                        }
+                    }
+            });
+
+            $(" #finCompra" ).change();
+        });
+        
+
+    </script>
+</head>
+<body>
+        <div id="encabezado3">
+            <div id="titulo3">
+                <h1>Tienda Online</h1>
+            </div>
+            <div id="terminarCompra">
+                <input id="finCompra" type="image" src="img/tienda/iconoCompra.png">       
+                <p id="añadida"></p>
+            </div>  
+            <div id="navegacion3">
+                <nav id="menu">
+                    <ul>
+                        <li><img id="imagenMenu" src="img/iconoMenu.jpg">
+                            <ul>
+                                <li><a href="index.html">Zodiaco</a></li>
+                                <li><a href="saberSigno.html">Saber Signo</a></li>
+                                <li><a href="caracteristicas.html">Características</a></li>
+                                <li><a href="blog/index.html">Blog</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="tienda">
+                    <h3>Bienvenid@ a la Tienda Online.</h3>
+                        <h4>Previamente a escoger su producto, diganos que signo es.</h4>
+                        <h4>Si aún no lo sabe, entra en nuestra sección <a href="saberSigno.html"><i>Saber Signo.</i></a></h4>
+                        <div id="signoElegir"></div>
+                            <select id="signoSeleccionada" name="signoSeleccionada">
+                                <option value="1" selected>Aries</option>
+                                <option value="2">Tauro</option>
+                                <option value="3">Géminis</option>
+                                <option value="4">Cáncer</option>
+                                <option value="5">Leo</option>
+                                <option value="6">Virgo</option>
+                                <option value="7">Libra</option>
+                                <option value="8">Escorpio</option>
+                                <option value="9">Sagitario</option>
+                                <option value="10">Capricornio</option>
+                                <option value="11">Acuario</option>
+                                <option value="12">Piscis</option>
+                            </select>
+                        </div>               
+                        <div class="productosCompras">
+                            <div id="producto">
+                                <img src="img/tienda/pulsera.jpg"> 
+                                    <p id="resultPulsera"></p>
+                                        <button id="botonCompra1">Añadir a la cesta</button><br><br>
+                            </div>
+                            <div id="producto">
+                                <img src="img/tienda/collar.jpg">
+                                    <p id="resultCollar"></p>
+                                        <button id="botonCompra2">Añadir a la cesta</button><br><br>
+                            </div>
+                            <div id="producto">
+                                <img src="img/tienda/tobillera.jpg">
+                                    <p id="resultTobillera"></p>
+                                        <button id="botonCompra3">Añadir a la cesta</button><br><br>
+                            </div>
+                            <div id="producto">
+                                <img src="img/tienda/bolsa.jpg">
+                                    <p id="resultTote"></p>
+                                        <button id="botonCompra4">Añadir a la cesta</button>
+                            </div>
+                        </div>
+                    </div>
+    <footer>
+        <p>Zodiaco Website · 2022</p>
+    </footer>
+</body>
+</html>

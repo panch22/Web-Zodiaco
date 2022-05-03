@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+  height: 90vh;
+  position: static;
+  font-size: 15px;
+  background-color: azure;
+  opacity: 0.8;
+}
+
+.contenedor {
+  background-image: url(img/index/estrellasAzul.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 98vh;
+}
+
+#menu {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -75px 0 0 -75px;
+  list-style: none;
+}
+
+.menu-boton {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background-size: contain;
+  text-decoration: none;
+  background-image: url(img/index/zodiacos.png);
+  background-color: azure;
+  background-repeat: no-repeat;
+}
+
+#menu:not(:target) > a:first-of-type,
+#menu:target > a:last-of-type {
+  opacity: 1;
+  z-index: 1;
+}
+
+#menu:not(:target) > .icon-grande:before,
+#menu:target > .icon-pequeño:before {
+  opacity: 1;
+}
+
+.menu-objeto {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+
+  left: 60%;
+  top: 50%;
+  margin: -50px 0 0 -50px;
+
+  transform: translate(0px, 0px);
+  transition: transform 500ms;
+}
+
+.menu-objeto span {
+  font-family: 'Bree Serif', serif;
+  font-size: 15px;
+}
+
+.menu-objeto:hover {
+  opacity: 0.5;
+}
+
+.menu-objeto a {
+  color: #fff;
+  position: relative;
+  top: 30%;
+  left: 0;
+  text-decoration: none;
+}
+
+#menu:target > .menu-objeto:nth-child(3) {
+  transform: rotate(60deg) translateY(-150px) rotate(300deg);
+  transition-delay: 0s;
+}
+
+#menu:target > .menu-objeto:nth-child(6) {
+  transform: rotate(20deg) translateY(-155px) rotate(-20deg);
+  transition-delay: 0.1s;
+}
+
+#menu:target > .menu-objeto:nth-child(5) {
+  transform: rotate(-20deg) translateY(-155px) rotate(20deg);
+  transition-delay: 0.2s;
+}
+
+#menu:target > .menu-objeto:nth-child(4) {
+  transform: rotate(-60deg) translateY(-150px) rotate(60deg);
+  transition-delay: 0.3s;
+}
+
+.contenido {
+  position: absolute;
+  text-align: center;
+  margin: -10px 0 0 -70px;
+  top: 70%;
+  left: 49%;
+  font-size: 40px;
+  color: azure;
+}
+
+.contenido h3 {
+  font-style: italic;
+}
+
+

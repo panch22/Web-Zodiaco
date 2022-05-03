@@ -1,0 +1,68 @@
+#encabezado1,
+#encabezado2,
+#encabezado3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo1 {
+    margin-left: -400px;
+}
+
+#titulo2 {
+    margin-right: 300px;
+}
+
+#titulo3 {
+    margin-right: 200px;
+    margin-bottom: -50px;
+}
+
+#terminarCompra {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: -200px;
+}
+
+#terminarCompra input {
+    width: 30%;
+    margin-left: 0px;
+}
+
+#terminarCompra p {
+    margin-left: 40px;
+}
+
+#navegacion1 #menu {
+    margin-left: 200px;
+    margin-top: -10px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+#navegacion2 #menu {
+    margin-left: 50px;
+    margin-bottom: 100px;
+    margin-top: -20px;
+    position: relative;
+}
+
+#navegacion3 #menu {
+    margin-top: 15px;
+    margin-bottom: 70px;
+    position: relative;
+    margin-left: 220px;
+}
+
+#navegacion1 #imagenMenu {
+    width: 20%;
+}
+
+#navegacion2 #imagenMenu {
+    width: 30%;
+}
+
+#navegacion3 #imagenMenu {
+    width: 10%;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloResto.css">
+    <link rel="stylesheet" media="(max-width: 600px)" href="estiloVentana.css" />
+    <link rel="icon" type="image/png" href="img/faviconZodiaco.png" sizes="16x16">    
+    <title>Zodiaco · Saber signo</title>
+    <script type="text/Javascript" src ="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/Javascript">
+        $( document ).ready(function() {
+            //Valores de las options del select, en función del value de las anteriores
+            var texto = [   
+                            "Eres Aries ♈",
+                            "Eres Tauro ♉",
+                            "Eres Géminis ♊",
+                            "Eres Cáncer ♋",
+                            "Eres Leo ♌",
+                            "Eres Virgo ♍",
+                            "Eres Libra ♎",
+                            "Eres Escorpio ♏",
+                            "Eres Sagitario ♐",
+                            "Eres Capricornio ♑",
+                            "Eres Acuario ♒",
+                            "Eres Piscis ♓"
+                        ];
+                        
+            //Parte 1: Al pinchar en una option, saca por el p el resultado del signo  
+            $( "#opcionSeleccionada" ).on( "change", function() {                                             
+                $('#result').text("Resultado: "+texto[this.value-1]);    
+                console.log('prueba');                             
+            });    
+            
+            $( "#opcionSeleccionada" ).change();
+        });
+    </script>
+</head>
+<body>
+    <div id="encabezado2">
+        <div id="titulo2">
+            <h1>Saber Signo</h1>
+        </div>
+        <div id="navegacion2">
+            <nav id="menu">
+                <ul>
+                    <li><img id="imagenMenu" src="img/iconoMenu.jpg">
+                        <ul>
+                            <li><a href="index.html">Zodiaco</a></li>
+                            <li><a href="caracteristicas.html">Características</a></li>
+                            <li><a href="tienda.html">Tienda Online</a></li>
+                            <li><a href="blog/index.html">Blog</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+        <form name="mesNacimiento">
+            <fieldset>
+                <label>Elija la franja que corresponda a su cumpleaños</label><br><br>
+                    <div id="opcionElegir"></div>
+                        <select id="opcionSeleccionada" name="opcionSeleccionada">
+                            <option value="1" selected>21 de marzo - 20 de abril</option>
+                            <option value="2">21 de abril - 20 de mayo</option>
+                            <option value="3">21 de mayo - 21 de junio</option>
+                            <option value="4">22 de junio - 21 de julio</option>
+                            <option value="5">22 de julio - 23 de agosto</option>
+                            <option value="6">24 de agosto - 23 de septiembre</option>
+                            <option value="7">24 de septiembre - 22 de octubre</option>
+                            <option value="8">23 de octubre - 22 de noviembre</option>
+                            <option value="9">23 de noviembre - 21 de diciembre</option>
+                            <option value="10">22 de diciembre - 20 de enero</option>
+                            <option value="11">21 de enero - 19 de febrero</option>
+                            <option value="12">20 de febrero - 20 de marzo</option>
+                        </select>
+                    </div>
+                    <br><br>
+            </fieldset>
+        </form>     
+        <p id="result"></p>
+        <p id="enlace">Para obtener más información, acceda a la sección de 
+            <a href="caracteristicas.html"><i>Características</i></a></p>
+            <footer>
+                <p>Zodiaco Website · 2022</p>
+            </footer>   
+    </body> 
+</html>

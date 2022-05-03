@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+body {
+    text-align: center;
+    background-image: url(/blog/img/nubes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+  }
+
+.contenido {      
+    margin: 0 auto;
+    padding: 20px;      
+}
+
+.contenido img {
+    width: 80%;
+}
+    
+.contenido h1,
+.contenido p {
+    margin: 0 auto;
+    padding: 15px;
+    width: 90%;
+}
+
+.contenido h1 {
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-style: italic;
+}
+
+.contenido p {
+    text-align: justify;
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contenido input {
+    border-style: none;
+    background-color: rgba(240, 255, 255, 0);
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    width: 92%;
+}
+
+.contenido input:hover {
+    transform: scale(1.2);
+}
+
+  footer {
+    background-color: white;
+    border-top: solid 1px black;
+    bottom: 0%;
+    margin-left: -10px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  footer p {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+  }

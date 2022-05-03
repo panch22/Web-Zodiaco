@@ -1,0 +1,343 @@
+/*Parte de Cristina*/
+/*Fuentes para el titulo y el texto*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+/*Elementos comunes de las páginas*/
+/*Parte 1 : Fondo de pantalla*/
+body {
+  background-image: url(/img/nubes.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/*Parte 2 : Menu de navegación*/
+
+#encabezado1,
+#encabezado2,
+#encabezado3 {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+#imagenMenu {
+    width: 15%;
+}
+
+#titulo1 {
+  width: 30%;
+}
+
+#titulo1 h1{
+  margin-left: 50px;
+}
+
+#navegacion1 #menu {
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+#titulo2 {
+  width: 50%;
+}
+
+#navegacion2 #imagenMenu {
+  width: 20%;
+}
+
+#titulo2 h1 {
+  margin-left: 150px;
+}
+
+#navegacion2 {
+  width: 50%;
+  margin-top: 50px;
+}
+
+#navegacion2 #menu {
+  margin-left: 250px;
+}
+
+nav {
+    position: relative;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li {
+    padding: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: solid 1px black;
+}
+
+#menu ul li:hover {
+  color: black;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+#menu ul ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: -15%;
+  left: 100px;
+  padding: 0;
+}
+
+#menu ul ul li {
+  float: none;
+  width: 200px;
+  background: white;
+}
+
+#menu ul ul a {
+  line-height: 120%;
+  padding: 10px 15px;
+}
+
+#menu ul li:hover > ul {
+  display: block;
+}
+
+/*Parte 2 : Título del apartado del blog*/
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    text-align: center;
+    padding: 10px;
+}
+/*Parte 3 : Footer*/
+/*En orden a que no se solape con el texto, se establece una altura de separación*/
+body {
+  margin-bottom: 80px;
+}
+
+footer {
+  background-color: white;
+  border-top: solid 1px black;
+  bottom: 0%;
+  margin-left: -10px;
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer p {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*Fin de lo común*/
+/*--------------------*/
+/*Apartado saberSigno*/
+/*Parte 1 : Para determinar el signo*/
+form {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    width: 60%;
+    background-color: white;
+}
+
+#opcionSeleccionada {
+  font-size: 15px;
+}
+
+/*Parte 2 : Resultado del JQuery y enlace a la página html*/
+#result {
+  font-size: 30px;
+  font-weight: bold;
+  font-family:'Raleway', sans-serif;
+}
+
+#enlace {
+  font-family:'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+/*Fin apartado SaberSigno*/
+/*---------------------------*/
+/*Apartado Caracteristicas*/
+#caracteristicas {
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#caracteristicas h2 {
+  font-family:'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  padding: 10px;
+  position: relative;
+}
+
+#caracteristicas img {
+  margin-top: -20px;
+}
+
+#caracteristicas p {
+  padding: 5px;
+  padding-left: 15px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 15px;
+  margin-right: 125px;
+  text-align: justify;
+  position: relative;
+}
+
+#signo {
+  display: flex;
+}
+
+#nombre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+}
+
+#descripcion {
+  display: flex;
+  flex-direction: column;
+}
+
+#informacion {
+  display: flex;
+  margin-left: 100px;
+}
+
+/*Las imágenes junto con la información han sido obtenidas de la página web https://astromundus.com/es/signos-del-zodiaco/*/
+/*Fin apartado Características*/
+/*---------------------------*/
+/*Apartado Tienda Online*/
+/*Parte 1 : Texto de la página*/
+#tienda {
+  margin-top: -10px;
+}
+
+#tienda h3,
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.productosCompras p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+#signoSeleccionada {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+/*Parte 2 : Productos de la tienda*/
+.productosCompras {
+  display: flex;
+  flex-direction: column;
+}
+
+.productosCompras img {
+  width: 50%;
+}
+
+/*Parte 3 : Añadir compra*/
+.productosCompras input {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.productosCompras button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+#titulo3 h1{
+  margin-left: 50px;
+  margin-right: -150px;
+}
+
+#navegacion3 #menu {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: -250px;
+}
+
+#introduccionTienda {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 80%;
+}
+
+#bienvenida {
+  margin-top: -20px;
+}
+
+#compras {
+  position: absolute;
+  margin-top: 60px;
+}
+
+#terminarCompra {
+  width: 30%;
+  margin-left: 200px;
+  margin-right: -300px;
+  position: relative;
+}
+
+#terminarCompra input {
+  width: 15%;
+  margin-top: 70px;
+}
+
+#terminarCompra p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 50px;
+  margin-top: -5px;
+}
+
+#shop button {
+ background: none;
+ border: none;
+ margin-right: 100px;
+}
+
+#producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+/*Fin del apartado Tienda Online*/
