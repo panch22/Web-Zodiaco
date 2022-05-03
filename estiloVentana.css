@@ -1,5 +1,16 @@
 /* Este estilo se aplica para cuando la ventana del navegador esta plegaba en su minimo de 600px*/
 /* Elementos comunes */
+
+/*Notas importantes:
+  - "Encabezado" está formado por "titulo" y "navegación"
+  - "titulo" corresponde al h1 de cada html
+  - "navegación" corresponde al nav de cada html
+  - Número de "titulo" y "navegación":
+    - 1 corresponde al "caracteristicas.html"
+    - 2 corresponde al "saberSigno.html"
+    - 3 corresponde al "tienda.html" con un elemento más: "terminarCompra", que corresponde a la cesta de la compra
+*/
+
 #encabezado1,
 #encabezado2,
 #encabezado3 {
