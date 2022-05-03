@@ -5,9 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 /*Elementos comunes de las páginas*/
-/*Parte 1 : Fondo de pantalla*/
+/*Parte 1 : Fondo de pantalla y caracteristicas de los elementos del blog*/
 body {
-  background-image: url(/img/nubes.jpg);
+  background-image: url(img/nubes.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -17,56 +17,13 @@ body {
 }
 
 /*Parte 2 : Menu de navegación*/
-
-#encabezado1,
-#encabezado2,
-#encabezado3 {
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  width: 100%;
+nav {
+    position: relative;
 }
 
 #imagenMenu {
-    width: 15%;
-}
-
-#titulo1 {
-  width: 30%;
-}
-
-#titulo1 h1{
-  margin-left: 50px;
-}
-
-#navegacion1 #menu {
-  margin-top: 50px;
-  margin-left: 200px;
-}
-
-#titulo2 {
-  width: 50%;
-}
-
-#navegacion2 #imagenMenu {
-  width: 20%;
-}
-
-#titulo2 h1 {
-  margin-left: 150px;
-}
-
-#navegacion2 {
-  width: 50%;
-  margin-top: 50px;
-}
-
-#navegacion2 #menu {
-  margin-left: 250px;
-}
-
-nav {
-    position: relative;
+  margin-top: 20px;
+  width: 10%;
 }
 
 #menu ul {
@@ -124,14 +81,92 @@ nav {
   display: block;
 }
 
-/*Parte 2 : Título del apartado del blog*/
+/*Parte 3 : Encabezados de cada html, no blog*/
+/*Notas importantes:
+  - "Encabezado" está formado por "titulo" y "navegación"
+  - "titulo" corresponde al h1 de cada html
+  - "navegación" corresponde al nav de cada html
+  - Número de "titulo" y "navegación":
+    - 1 corresponde al "caracteristicas.html"
+    - 2 corresponde al "saberSigno.html"
+    - 3 corresponde al "tienda.html"
+*/
+
+#encabezado1,
+#encabezado2,
+#encabezado3 {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+/*  Encabezado de caracteristicas.html */
+#titulo1 {
+  width: 30%;
+}
+
+#titulo1 h1{
+  margin-left: 50px;
+}
+
+#navegacion1 #menu {
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+/*  Encabezado de saberSigno.html */
+
+#titulo2 {
+  width: 50%;
+}
+
+#titulo2 h1 {
+  margin-left: 150px;
+}
+
+#navegacion2 {
+  width: 50%;
+  margin-top: 50px;
+}
+
+#navegacion2 #menu {
+  margin-left: 250px;
+}
+
+#navegacion2 #imagenMenu {
+  width: 20%;
+}
+
+/*  Encabezado de tienda.html */
+/* Nota importante: este encabezado tiene como 3º elemento, la cesta de la compra*/
+
+#titulo3 h1{
+  margin-left: 50px;
+  margin-right: -150px;
+}
+
+#navegacion3 #menu {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: -250px;
+}
+
+#terminarCompra {
+  width: 30%;
+  margin-left: 200px;
+  margin-right: -300px;
+  position: relative;}
+
+
+/*Parte 4 : Título de los apartados de los html*/
 h1 {
     font-family: 'Abril Fatface', cursive;
     font-size: 60px;
     text-align: center;
     padding: 10px;
 }
-/*Parte 3 : Footer*/
+/*Parte 5 : Footer*/
 /*En orden a que no se solape con el texto, se establece una altura de separación*/
 body {
   margin-bottom: 80px;
@@ -214,17 +249,21 @@ form {
   position: relative;
 }
 
+/* Esta parte corresponde al nombre, imagen y descripcion de cada signo, todo englobado dentro
+del div "signo"*/
 #signo {
   display: flex;
 }
 
-#nombre {
+/* Imagen del signo */
+#figura {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 100px;
 }
 
+/* Descripción de cada signo */
 #descripcion {
   display: flex;
   flex-direction: column;
@@ -279,40 +318,6 @@ h4 {
 .productosCompras button {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-}
-
-#titulo3 h1{
-  margin-left: 50px;
-  margin-right: -150px;
-}
-
-#navegacion3 #menu {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: -250px;
-}
-
-#introduccionTienda {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  width: 80%;
-}
-
-#bienvenida {
-  margin-top: -20px;
-}
-
-#compras {
-  position: absolute;
-  margin-top: 60px;
-}
-
-#terminarCompra {
-  width: 30%;
-  margin-left: 200px;
-  margin-right: -300px;
-  position: relative;
 }
 
 #terminarCompra input {

@@ -1,41 +1,12 @@
+/* Este estilo se aplica en el caso de que la ventana tengo las dimensiones
+de una tablet en forma vertical*/
+/* En forma horizontal, se aplican las medidas normales establecidas */
+
 @media (min-width: 768px) and (max-width: 1024px) {
+/* Elementos comunes de todos los html */
     body {
         background-image: url(img/nubes.jpg);
         background-size: cover;
-    }
-
-    #titulo1 h1 {
-        margin-left: -100px;
-        padding: 0;
-    }
-
-    #titulo2 {
-        margin-left: -50px;
-    }
-
-    #titulo3 {
-        margin-right: 150px;
-    }
-
-    #encabezado3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #navegacion1 #menu {
-        margin-top: -10px;
-        margin-left: 350px;
-        margin-bottom: 50px;
-    }
-
-    #navegacion2 #menu {
-        margin-top: 50px;
-        margin-left: 100px;
-    }
-
-    #navegacion2 #imagenMenu {
-        width: 20%;
     }
 
     #menu ul ul {
@@ -47,6 +18,49 @@
         padding: 0;
       }
 
+/* Apartado caracteristicas.html */
+    #titulo1 h1 {
+        margin-left: -100px;
+        padding: 0;
+    }
+
+    #navegacion1 #menu {
+        margin-top: -10px;
+        margin-left: 350px;
+        margin-bottom: 50px;
+    }    
+
+/* Apartado saberSigno.html */
+    #titulo2 {
+        margin-left: -50px;
+    }
+    
+    #navegacion2 #imagenMenu {
+        width: 20%;
+    }    
+
+    #navegacion2 #menu {
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+
+/* Apartado tienda.html */
+    #encabezado3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #titulo3 {
+        margin-right: 150px;
+    }    
+
+    #navegacion3 #menu {
+        margin-top: -10px;
+        margin-left: 200px;
+        margin-bottom: 50px;
+    }
+
     #terminarCompra {
         margin-right: 40px;
         margin-top: -80px;
@@ -55,12 +69,5 @@
 
     #terminarCompra input {
         width: 30%;
-    }
-
-
-    #navegacion3 #menu {
-        margin-top: -10px;
-        margin-left: 200px;
-        margin-bottom: 50px;
     }
 }

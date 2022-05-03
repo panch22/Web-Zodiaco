@@ -1,3 +1,5 @@
+/* Este estilo se aplica para cuando la ventana del navegador esta plegaba en su minimo de 600px*/
+/* Elementos comunes */
 #encabezado1,
 #encabezado2,
 #encabezado3 {
@@ -6,17 +8,53 @@
     align-items: center;
 }
 
+/* Apartado caracteristicas.html */
 #titulo1 {
     margin-left: -400px;
 }
 
+#navegacion1 #menu {
+    margin-left: 200px;
+    margin-top: -10px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+#navegacion1 #imagenMenu {
+    width: 20%;
+}
+
+/* Apartado saberSigno.html */
 #titulo2 {
     margin-right: 300px;
 }
 
+#navegacion2 #menu {
+    margin-left: 50px;
+    margin-bottom: 100px;
+    margin-top: -20px;
+    position: relative;
+}
+
+#navegacion2 #imagenMenu {
+    width: 30%;
+}
+
+/* Apartado tienda.html */
 #titulo3 {
     margin-right: 200px;
     margin-bottom: -50px;
+}
+
+#navegacion3 #menu {
+    margin-top: 15px;
+    margin-bottom: 70px;
+    position: relative;
+    margin-left: 220px;
+}
+
+#navegacion3 #imagenMenu {
+    width: 10%;
 }
 
 #terminarCompra {
@@ -32,37 +70,4 @@
 
 #terminarCompra p {
     margin-left: 40px;
-}
-
-#navegacion1 #menu {
-    margin-left: 200px;
-    margin-top: -10px;
-    margin-bottom: 100px;
-    position: relative;
-}
-
-#navegacion2 #menu {
-    margin-left: 50px;
-    margin-bottom: 100px;
-    margin-top: -20px;
-    position: relative;
-}
-
-#navegacion3 #menu {
-    margin-top: 15px;
-    margin-bottom: 70px;
-    position: relative;
-    margin-left: 220px;
-}
-
-#navegacion1 #imagenMenu {
-    width: 20%;
-}
-
-#navegacion2 #imagenMenu {
-    width: 30%;
-}
-
-#navegacion3 #imagenMenu {
-    width: 10%;
 }
