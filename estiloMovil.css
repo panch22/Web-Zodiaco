@@ -1,0 +1,135 @@
+/* Este estilo se aplica para cuando la ventana del navegador esta plegaba en su minimo de 600px*/
+/* Elementos comunes */
+
+/*Notas importantes:
+  - "Encabezado" está formado por "titulo" y "navegación"
+  - "titulo" corresponde al h1 de cada html
+  - "navegación" corresponde al nav de cada html
+  - Número de "titulo" y "navegación":
+    - 1 corresponde al "caracteristicas.html"
+    - 2 corresponde al "saberSigno.html"
+    - 3 corresponde al "tienda.html" con un elemento más: "terminarCompra", que corresponde a la cesta de la compra
+*/
+
+body {
+    width: 100%;
+    background-image: url(img/nubes.jpg);
+    background-size: cover;
+    background-size: 500%;
+}
+
+footer {
+    width: 100%;
+}
+
+#encabezado1,
+#encabezado2,
+#encabezado3,
+#encabezado4 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Apartado caracteristicas.html */
+#imagenZodiaco {
+    width: fit-content;
+}
+
+#fila {
+    display: flex;
+    justify-content: space-around;
+}
+
+#columna {
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo1 {
+    margin-left: 80px;
+}
+
+#navegacion1 #menu {
+    margin-left: 260px;
+    margin-bottom: 50px;
+}
+
+#navegacion1 #imagenMenu {
+    width: 20%;
+}
+
+/* Apartado saberSigno.html */
+#titulo2 {
+    margin-left: 50px;
+}
+
+#navegacion2 #menu {
+    margin-top: -10px;
+    margin-left: 250px;
+    margin-bottom: 50px;
+}
+
+#navegacion2 #imagenMenu {
+    width: 100%;
+}
+
+#enlace {
+    margin-left: 50px;
+}
+
+/* Apartado tienda.html */
+#titulo3 {
+    margin-left: -200px;
+}
+
+#navegacion3 #menu {
+    margin-left: 240px;
+}
+
+#navegacion3 #imagenMenu {
+    margin-top: 10px;
+}
+
+
+#terminarCompra input {
+    width: 30%;
+    margin-left: -60px;
+}
+
+#terminarCompra p {
+    margin-left: -20px;
+}
+
+#presentacion {
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+#prodOnline {
+    margin-left: 150px;
+}
+
+/* Apartado del formulario */
+
+#titulo4 {
+    margin-left: -350px;
+    margin-bottom: -50px;
+}
+
+#navegacion4 #menu {
+    margin-left: -200px;
+    margin-bottom: 50px;
+}
+
+/* Apartado de blog */
+.contenido {
+    width: 40%;
+    margin-left: -70px;
+}
+
+.caja {
+    width: 250%;
+    height: 20vh;
+    margin-left: 90px;
+}
+

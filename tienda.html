@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="estiloResto.css">
-    <link rel="stylesheet" media="(max-width: 600px)" href="estiloVentana.css" />
+    <link rel="stylesheet" media="(max-width: 600px)" href="estiloMovil.css" />
     <link rel="stylesheet" media="(max-width: 1024px)" href="estiloTablet.css" />
     <link rel="icon" type="image/png" href="img/faviconZodiaco.png" sizes="16x16">
     <title>Zodiaco · Tienda</title>
@@ -125,33 +126,36 @@
     </script>
 </head>
 <body>
-        <div id="encabezado3">
-            <div id="titulo3">
-                <h1>Tienda Online</h1>
-            </div>
-            <div id="terminarCompra">
-                <input id="finCompra" type="image" src="img/tienda/iconoCompra.png">       
-                <p id="añadida"></p>
-            </div>  
-            <div id="navegacion3">
-                <nav id="menu">
-                    <ul>
-                        <li><img id="imagenMenu" src="img/iconoMenu.jpg">
-                            <ul>
-                                <li><a href="inicio.html">Zodiaco</a></li>
-                                <li><a href="saberSigno.html">Saber Signo</a></li>
-                                <li><a href="caracteristicas.html">Características</a></li>
-                                <li><a href="blog/index.html">Blog</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+    <div id="encabezado3">
+        <div id="titulo3">
+            <h1>Tienda Online</h1>
         </div>
-        <div id="tienda">
-                    <h3>Bienvenid@ a la Tienda Online.</h3>
-                        <h4>Previamente a escoger su producto, diganos que signo es.</h4>
-                        <h4>Si aún no lo sabe, entra en nuestra sección <a href="saberSigno.html"><i>Saber Signo.</i></a></h4>
+        <div id="terminarCompra">
+            <input id="finCompra" type="image" src="img/tienda/iconoCompra.png">       
+            <p id="añadida"></p>
+        </div>  
+        <div id="navegacion3">
+            <nav id="menu">
+                <ul>
+                    <li><img id="imagenMenu" src="img/iconoMenu.jpg">
+                        <ul>
+                            <li><a href="index.html">Zodiaco</a></li>
+                            <li><a href="saberSigno.html">Saber Signo</a></li>
+                            <li><a href="caracteristicas.html">Características</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </div>
+
+    <div class="container" id="presentacion">
+        <h3>Bienvenid@ a la Tienda Online.</h3>
+                    <h4>Previamente a escoger su producto, diganos que signo es.</h4>
+                    <h4>Si aún no lo sabe, entra en nuestra sección <a href="saberSigno.html"><i>Saber Signo.</i></a></h4>
+                    <h4>Si deseas recibir un descuento del 10%, rellena el siguiente <a href="formulario.html">formulario</a></h4>
                         <div id="signoElegir"></div>
                             <select id="signoSeleccionada" name="signoSeleccionada">
                                 <option value="1" selected>Aries</option>
@@ -167,30 +171,42 @@
                                 <option value="11">Acuario</option>
                                 <option value="12">Piscis</option>
                             </select>
-                        </div>               
-                        <div class="productosCompras">
-                            <div id="producto">
-                                <img src="img/tienda/pulsera.jpg"> 
-                                    <p id="resultPulsera"></p>
-                                        <button id="botonCompra1">Añadir a la cesta</button><br><br>
-                            </div>
-                            <div id="producto">
-                                <img src="img/tienda/collar.jpg">
-                                    <p id="resultCollar"></p>
-                                        <button id="botonCompra2">Añadir a la cesta</button><br><br>
-                            </div>
-                            <div id="producto">
-                                <img src="img/tienda/tobillera.jpg">
-                                    <p id="resultTobillera"></p>
-                                        <button id="botonCompra3">Añadir a la cesta</button><br><br>
-                            </div>
-                            <div id="producto">
-                                <img src="img/tienda/bolsa.jpg">
-                                    <p id="resultTote"></p>
-                                        <button id="botonCompra4">Añadir a la cesta</button>
-                            </div>
-                        </div>
-                    </div>
+                        </div>  
+    </div>
+    <div class="container" id="prodOnline">
+        <div class="row">
+            <div class="card" style="width: 20rem;" id="item">
+                <img src="img/tienda/pulsera.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="carda-text" id="resultPulsera"></p>
+                    <button class="btn btn-primary" id="botonCompra1">Añadir a la cesta</button>
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;" id="item">
+                <img src="img/tienda/collar.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="carda-text" id="resultCollar"></p>
+                    <button class="btn btn-primary" id="botonCompra2">Añadir a la cesta</button>
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;" id="item">
+                <img src="img/tienda/tobillera.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="carda-text" id="resultTobillera"></p>
+                    <button class="btn btn-primary" id="botonCompra3">Añadir a la cesta</button>
+                </div>
+            </div>
+            <div class="card" style="width: 20rem;" id="item">
+                <img src="img/tienda/bolsa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="carda-text" id="resultTote"></p>
+                    <button class="btn btn-primary" id="botonCompra4">Añadir a la cesta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <footer>
         <p>Zodiaco Website · 2022</p>
     </footer>

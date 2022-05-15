@@ -17,6 +17,7 @@ de una tablet en forma vertical*/
     body {
         background-image: url(img/nubes.jpg);
         background-size: cover;
+        width: 100%;
     }
 
     #menu ul ul {
@@ -28,10 +29,14 @@ de una tablet en forma vertical*/
         padding: 0;
       }
 
+      footer {
+        width: 100%;
+    }
+
 /* Apartado caracteristicas.html */
     #titulo1 h1 {
-        margin-left: -100px;
-        padding: 0;
+        margin-left: 80px;
+        margin-bottom: 50px;
     }
 
     #navegacion1 #menu {
@@ -67,17 +72,50 @@ de una tablet en forma vertical*/
 
     #navegacion3 #menu {
         margin-top: -10px;
-        margin-left: 200px;
+        margin-left: 280px;
         margin-bottom: 50px;
     }
 
     #terminarCompra {
-        margin-right: 40px;
-        margin-top: -80px;
+        margin-left: 200px;
+        margin-right: 0px;
         margin-bottom: 40px;
     }
 
     #terminarCompra input {
         width: 30%;
+    }
+
+    #presentacion {
+        margin-left: 100px;
+    }
+
+/* Apartado del formulario */
+
+    #encabezado4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulo4 {
+        margin-left: -280px;
+        margin-bottom: -50px;
+    }
+    
+    #navegacion4 #menu {
+        margin-left: -150px;
+        margin-bottom: 50px;
+    }
+
+/* Apartado del blog */
+    .contenido {
+        width: 40%;
+        margin-left: -70px;
+    }
+    
+    .caja {
+        width: 250%;
+        height: 20vh;
+        margin-left: 90px;
     }
 }

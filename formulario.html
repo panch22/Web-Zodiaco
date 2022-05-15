@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/img/faviconZodiaco.png" sizes="16x16">
+  <link rel="stylesheet" href="estiloResto.css">
+  <link rel="stylesheet" media="(max-width: 600px)" href="estiloMovil.css"/>`
+  <link rel="stylesheet" media="(max-width: 1024px)" href="estiloTablet.css" />
+  <title>Formulario · Blog astológico</title>
+</head>
+
+<body>
+<div id="encabezado4">
+        <div id="titulo4">
+            <h1>Formulario</h1>
+        </div>
+        <div id="navegacion4">
+                    <nav id="menu">
+                        <ul>
+                            <li><img id="imagenMenu" src="img/iconoMenu.jpg">
+                                <ul>
+                                    <li><a href="index.html">Zodiaco</a></li>
+                                    <li><a href="saberSigno.html">Saber Signo</a></li>
+                                    <li><a href="tienda.html">Tienda Online</a></li>
+                                    <li><a href="blog/index.html">Blog</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+        </div> 
+</div>  
+<div class="container-fluid">
+      <form id="formulario">
+        <fieldset id="cuestionario">
+          <legend>Datos personales</legend>
+          <div id="fila2">
+            <div id="columna2">
+                <label for="nombre">Nombre *</label><br />
+                <input placeholder="Tu nombre" type="text" name="nombre" id="nombre" pattern="[A-Za-z]{2,10}" required />
+            </div>
+            <div id="columna2">
+                <label for="apellidoUno">Primer apellido *</label><br />
+                <input placeholder="Primer apellido" required type="text" name="apellidoUno" id="apellidoUno" pattern="[A-Za-z]{2,10}" required/>
+            </div>
+            <div id="columna2">
+                <label for="apellidoDos">Segundo apellido *</label><br />
+                <input placeholder="Segundo apellido" required type="text" name="apellidoDos" id="apellidoDos" pattern="[A-Za-z]{2,10}" required />
+            </div>
+            <div id="columna2">
+                <label for="lugarNacimiento">Lugar de nacimiento</label><br />
+                <input placeholder="Selecciona tu país" type="text" name="lugarNacimiento" id="lugarNacimiento" pattern="[A-Za-z]{5,20}"/>
+            </div>
+          </div>
+          <div id="fila2">
+              <div id="columna2">
+                <label for="fechaNacimiento">Fecha nacimiento</label><br />
+                <input type="date" name="fechaNacimiento" id="fechaNacimiento"/>
+              </div>
+              <div id="columna2">
+                <label for="pais">País de nacimiento</label><br />
+                <select name="pais" id="pais">
+                  <option selected>Selecciona tu país</option>
+                  <option>España</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div id="columna2">
+                <label for="nacion">Nacionalidad</label><br />
+                <select name="nacion" id="nacion">
+                  <option selected>Selecciona tu nacionalidad</option>
+                  <option>España</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div id="columna2">
+                <label for="dni">Selecciona identificación</label><br />
+                <select name="dni" id="dni">
+                  <option>Seleccione su documentación</option>
+                  <option>NIF</option>
+                  <option>Pasaporte</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+          </div>
+          <div id="fila2">
+              <div id="columna2">
+                <label for="numeroDni">Número identificación <span class="requerido">*</span></label><br />
+                <input placeholder="12345678A" type="text" name="numeroDni" id="numeroDni" pattern ="[0-9]{8}[A-Z]{1}" required/>
+              </div>
+              <div id="columna2">
+                <label for="carnet">Carnet de conducir</label><br />
+                <select name="carnet" id="carnet">
+                  <option>Selecciona</option>
+                  <option>Sí</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div id="columna2">
+                <label for="tipo">Tipo</label><br />
+                <select name="tipo" id="tipo">
+                    <option selected>Selecciona tipo de carnet</option>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                  </select>
+              </div>
+              <div id="columna2">
+                <label for="coche">Vehículo propio</label><br />
+                <select name="coche" id="coche">
+                  <option selected>Selecciona</option>
+                  <option>Sí</option>
+                  <option>No</option>
+                </select>
+              </div>
+          </div>
+        </fieldset><br><br>
+        <button type="submit" id="enviarFormulario">Enviar</button>
+      </form>
+  </div>
+</body>
+</html>

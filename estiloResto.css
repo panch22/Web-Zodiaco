@@ -14,6 +14,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  width: 100%;
 }
 
 /*Parte 2 : Menu de navegación*/
@@ -22,8 +23,7 @@ nav {
 }
 
 #imagenMenu {
-  margin-top: 20px;
-  width: 10%;
+  width: 15%;
 }
 
 #menu ul {
@@ -96,23 +96,24 @@ nav {
 #encabezado2,
 #encabezado3 {
   display: flex;
-  justify-content: space-around;
   flex-flow: row wrap;
-  width: 100%;
+}
+
+#navegacion1 #imagenMenu,
+#navegacion2 #imagenMenu {
+  width: 20%;
 }
 
 /*  Encabezado de caracteristicas.html */
 #titulo1 {
+  margin-top: 20px;
+  margin-left: 100px;
   width: 30%;
 }
 
-#titulo1 h1{
-  margin-left: 50px;
-}
-
 #navegacion1 #menu {
-  margin-top: 50px;
-  margin-left: 200px;
+  margin-top: 25px;
+  margin-left: 400px;
 }
 
 /*  Encabezado de saberSigno.html */
@@ -134,27 +135,28 @@ nav {
   margin-left: 250px;
 }
 
-#navegacion2 #imagenMenu {
-  width: 20%;
-}
-
 /*  Encabezado de tienda.html */
 /* Nota importante: este encabezado tiene como 3º elemento, la cesta de la compra*/
 
 #titulo3 h1{
+  margin-top: 20px;
   margin-left: 50px;
   margin-right: -150px;
 }
 
 #navegacion3 #menu {
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: 35px;
+  margin-left: 70px;
   margin-right: -250px;
+}
+
+#navegacion3 #imagenMenu {
+  width: 10%;
 }
 
 #terminarCompra {
   width: 30%;
-  margin-left: 200px;
+  margin-left: 300px;
   margin-right: -300px;
   position: relative;}
 
@@ -176,7 +178,6 @@ footer {
   background-color: white;
   border-top: solid 1px black;
   bottom: 0%;
-  margin-left: -10px;
   position: fixed;
   width: 100%;
   margin: 0 auto;
@@ -194,16 +195,24 @@ footer p {
 /*--------------------*/
 /*Apartado saberSigno*/
 /*Parte 1 : Para determinar el signo*/
-form {
+#mesNacimiento {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
-    width: 60%;
+    width: 70%;
     background-color: white;
 }
 
+#mesNacimiento fieldset {
+  padding: 30px;
+}
+
+#mesNacimiento label {
+  font-size: 30px;
+}
+
 #opcionSeleccionada {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 /*Parte 2 : Resultado del JQuery y enlace a la página html*/
@@ -215,7 +224,7 @@ form {
 
 #enlace {
   font-family:'Raleway', sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
 }
 /*Fin apartado SaberSigno*/
@@ -247,6 +256,15 @@ form {
   margin-right: 125px;
   text-align: justify;
   position: relative;
+}
+
+#fila {
+  display: flex;
+}
+
+#columna {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Esta parte corresponde al nombre, imagen y descripcion de cada signo, todo englobado dentro
@@ -297,7 +315,7 @@ h4 {
 #signoSeleccionada {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
 }
 /*Parte 2 : Productos de la tienda*/
 .productosCompras {
@@ -322,14 +340,14 @@ h4 {
 
 #terminarCompra input {
   width: 15%;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 #terminarCompra p {
   font-size: 20px;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
-  margin-left: 50px;
+  margin-left: 60px;
   margin-top: -5px;
 }
 
@@ -345,4 +363,112 @@ h4 {
   align-items: center;
   padding: 20px;
 }
+
+#resultTobillera {
+  margin-top: 80px;
+}
+
+#prodOnline {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+#presentacion {
+  padding: 10px;
+  margin-left: 200px;
+}
+
+#botonCompra1,
+#botonCompra2,
+#botonCompra3,
+#botonCompra4 {
+  margin-left: 40px;
+  border-radius: 15px;
+  background-color: lightblue;
+  border-color: lightblue;
+  font-weight: bold;
+}
+
+#resultTobillera,
+#resultCollar,
+#resultPulsera,
+#resultTote {
+  margin-left: 20px;
+  font-size: 20px;
+}
 /*Fin del apartado Tienda Online*/
+/*------------------------------*/
+/*Apartado cuestionario*/
+#formulario {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  margin-top: 200px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#fila2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+#columna2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+#rellenar {
+  padding: 15px;
+}
+
+#formulario select {
+  padding: 4px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#pais {
+  width: 70%;
+}
+
+input {
+  padding: 3px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#encabezado4 {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 500px;
+  margin-bottom: -200px;
+}
+
+#titulo4 {
+  width: 30%;
+}
+
+#navegacion4 #menu {
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+input:valid {
+  background-color: green;
+}
+
+input:invalid {
+  background-color: red;
+}
+
+#enviarFormulario {
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 10px;
+}
+/*Fin del apartado cuestionario*/
